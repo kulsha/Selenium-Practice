@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="12426" started-at="2020-01-24T17:50:29Z" finished-at="2020-01-24T17:50:42Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="12426" started-at="2020-01-24T17:50:29Z" finished-at="2020-01-24T17:50:42Z">
+      <class name="practise.ValidateErroeMsg">
+        <test-method status="PASS" signature="test()[pri:0, instance:practise.ValidateErroeMsg@675d3402]" name="test" duration-ms="12362" started-at="2020-01-24T23:20:29Z" finished-at="2020-01-24T23:20:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- practise.ValidateErroeMsg -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

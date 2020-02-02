@@ -17,14 +17,15 @@ public class WebTable_1 {
 		driver.get("https://cosmocode.io/automation-practice-webtable/");
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		
-		WebElement e = driver.findElement(By.xpath("//*[@id='countries']/tbody"));
-		List<WebElement> rowCount = e.findElements(By.tagName("tr"));
-		System.out.println(rowCount.size());
+		List<WebElement> list = driver.findElements(By.xpath("//*[@id='countries']/tbody/tr"));
+		int rowCount = list.size();
+		System.out.println(rowCount);
 		
+		//      //*[@id='countries']/tbody/tr[1]/td[2]/strong
 		String before_xpath = "//*[@id='countries']/tbody/tr[";
 		String after_xpath = "]/td[2]/strong";
 		
-		for(int i=2 ; i<=rowCount.size() ; i++)
+		for(int i=2 ; i<=rowCount ; i++)
 		{
 			String name = driver.findElement(By.xpath(before_xpath+i+after_xpath)).getText();
 			System.out.println(name);
