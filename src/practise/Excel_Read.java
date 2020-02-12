@@ -32,6 +32,7 @@ public class Excel_Read {
 		String v = c.getStringCellValue();
 		System.out.println(v);
 		
+		//int rowCoun = sh.getLastRowNum();
 		int rowCount = sh.getPhysicalNumberOfRows();
 		System.out.println(rowCount);
 		

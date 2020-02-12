@@ -22,7 +22,7 @@ public class DragNDrop {
 		Thread.sleep(2000);//drag and hold
 		WebElement e1 = driver.findElement(By.xpath("//div[@id='droppable']")); //release place
 		a.clickAndHold(e).moveToElement(e1).release().build().perform();
-		
+		//a.dragAndDrop(e, e1).build().perform();
 		
 		
 		
