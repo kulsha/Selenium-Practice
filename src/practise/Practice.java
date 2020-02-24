@@ -12,22 +12,12 @@ public class Practice {
 
 	public static void main(String[] args) throws InterruptedException {
 		
-		System.setProperty("webdriver.chrome.driver", "./Softwares/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./Softwares/chromedriver_1.exe");
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://www.spicejet.com/");
+		driver.get("https://www.google.com/");
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		
-
-		WebElement e = driver.findElement(By.xpath("//li[@class='li-login float-right tabres']/a[contains( text(), 'Login / Signup')]"));
-		Actions a = new Actions(driver);
-		a.moveToElement(e).build().perform();
-		Thread.sleep(2000);
-		WebElement e1 = driver.findElement(By.xpath("//a[contains( text(), 'SpiceClub Members')]"));
-		a.moveToElement(e1).build().perform();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//a[text() = 'Sign up']")).click();
-		String s = driver.getTitle();
-		System.out.println(s);
+		driver.findElement(By.xpath("//input[@class='gLFyf gsfi']")).sendKeys("shashank");
 	}	
 
 }

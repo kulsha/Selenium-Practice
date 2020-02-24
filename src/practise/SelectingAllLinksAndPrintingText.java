@@ -27,6 +27,8 @@ public class SelectingAllLinksAndPrintingText {
 			System.out.println(linktext);
 		}
 		
+		
+		
 	}
 
 }
