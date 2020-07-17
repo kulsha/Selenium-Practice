@@ -12,9 +12,14 @@ public class BrowserLevelNotifications_ChromeOptionsClass {
 		
 		ChromeOptions options = new ChromeOptions();
 		//options.addArguments("--disable-notifications"); // disable notifications
-		options.addArguments("start-maximized"); // to maximize the browser
-		System.setProperty("webdriver.chrome.driver", "./Softwares/chromedriver.exe");
-		WebDriver driver =new ChromeDriver(options);
+		//options.addArguments("--headless");
+		options.addArguments("start-maximized");
+		options.addArguments("version");
+		//options.addArguments("disable-infobars");
+		options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
+		//options.addArguments("--incognito");// to maximize the browser
+		System.setProperty("webdriver.chrome.driver", "./Softwares/chromedriver_83.exe");
+		WebDriver driver = new ChromeDriver(options);
 		driver.get("https://www.google.com");
 		
 		

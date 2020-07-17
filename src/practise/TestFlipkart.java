@@ -18,7 +18,7 @@ public class TestFlipkart {
 		ChromeOptions options = new ChromeOptions();
 		//options.addArguments("--disable-notifications"); // disable notifications
 		options.addArguments("start-maximized"); // to maximize the browser
-		System.setProperty("webdriver.chrome.driver", "./Softwares/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./Softwares/chromedriver_80.exe");
 		WebDriver driver =new ChromeDriver(options);
 		driver.get("https://www.flipkart.com");
 		
@@ -41,13 +41,12 @@ public class TestFlipkart {
 		
 		for (WebElement webElement : dealProducts) {
 			String s1=webElement.getAttribute("title");
-			System.out.println(s1.contains("off")+"---"+s1.contains("Off"));
+			//System.out.println(s1.contains("off")+"---"+s1.contains("Off"));
 			System.out.println(s1);
 		}
 		
 		for (WebElement webElement : dealProdImg) {
-			System.out.println(webElement.isDisplayed());
-			
+			//System.out.println(webElement.isDisplayed());	
 		}
 		
 	}

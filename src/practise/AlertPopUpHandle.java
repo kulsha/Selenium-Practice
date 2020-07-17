@@ -4,6 +4,9 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 public class AlertPopUpHandle {
@@ -23,8 +26,16 @@ public class AlertPopUpHandle {
 	//	System.out.println(alert.getText());
 		alert.accept(); //click ok button
 		//alert.dismiss(); // click cancel button
-		
+	
+		String text = alert.getText();
+		System.out.println(text);
 	  Assert.assertEquals(alert.getText(), "Please enter a valid user name" , "values match");
+	  
+	  
+	  Wait wait = new WebDriverWait(driver,10);
+	  wait.until(ExpectedConditions.alertIsPresent());
+	  
+	  
 	}
 
 }

@@ -19,9 +19,10 @@ public class ValidateErroeMsg {
 		driver.findElement(By.xpath("//div[@id='identifierNext']")).click();
 		
 		String msg = driver.findElement(By.xpath("//div[@class='o6cuMc']")).getText();
-		Assert.assertEquals(msg, "Enter an email or phone number" , "TestCase pass");
+		Assert.assertEquals(msg, "Enter an email or phone number" , "TestCase fail");
 		
-
+	
+		
 	}
 
 }

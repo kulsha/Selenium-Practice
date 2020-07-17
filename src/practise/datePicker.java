@@ -13,22 +13,27 @@ public class datePicker {
 
 	public static void main(String[] args) throws InterruptedException {
 		
-		System.setProperty("webdriver.chrome.driver", "./Softwares/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./Softwares/chromedriver_83.exe");
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://www.goindigo.in/");
+		driver.get("https://www.cleartrip.com/");
 		Thread.sleep(2000);
 		
-		WebElement date = driver.findElement(By.xpath("//input[@class='form-control or-depart igInitCalendar']"));
-		String dateval = "30 Dec 2020";
+		WebElement date = driver.findElement(By.xpath("//input[@id='DepartDate']"));
+		String dateval = "Fri, 26 Aug, 2020";
 		
 		selectDateByJS(driver, date, dateval);
 		
 	}
+	//D, d M, yy
 	
 	public static void selectDateByJS(WebDriver driver ,WebElement element , String dateval)
 	{
 			JavascriptExecutor js = ((JavascriptExecutor)driver); 
-			js.executeScript("arguments[0].setAttribute('value' , '"+dateval+"');", element);
+			//js.executeScript("arguments[0].setAttribute('value' , '"+dateval+"');", element);
+			//arguments[0].removeAttribute('readonly','readonly')
+			js.executeScript("arguments[0].removeAttribute('readonly','readonly')",element);
+			element.clear();
+			element.sendKeys(dateval);
 	}
 
 }

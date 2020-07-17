@@ -27,7 +27,7 @@ public class WebTable_3 {
 		String before_xpath = "//*[@id='countries']/tbody/tr[";
 		String after_xpath = "]/td[2]/strong";
 		
-		for(int i=2 ; i<10 ; i++)
+		for(int i=2 ; i<12 ; i++)
 		{
 			String actual_xpath = before_xpath+i+after_xpath;
 			WebElement element = driver.findElement(By.xpath(actual_xpath));
@@ -43,7 +43,7 @@ public class WebTable_3 {
 		
 		// //*[@id="countries"]/tbody/tr[2]/td[3]
 		String afterXpathCapital= "]/td[3]";
-		for(int i=2 ; i<10 ; i++)
+		for(int i=2 ; i<12 ; i++)
 		{
 			String actual_xpath = before_xpath + i + afterXpathCapital;
 			WebElement element = driver.findElement(By.xpath(actual_xpath));
@@ -52,7 +52,7 @@ public class WebTable_3 {
 		System.out.println("***************************************************");
 		
 		String afterXpathCurrency= "]/td[4]";
-		for(int i=2 ; i<10 ; i++)
+		for(int i=2 ; i<12 ; i++)
 		{
 			String actual_xpath = before_xpath + i + afterXpathCurrency;
 			WebElement element = driver.findElement(By.xpath(actual_xpath));

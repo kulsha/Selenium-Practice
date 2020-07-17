@@ -16,8 +16,9 @@ public class WebTable_2 {
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		
 		
-		driver.findElement(By.xpath("//strong[contains( text(), 'The Bahamas')]/parent::td//preceding-sibling::td/input")).click();
-
+	driver.findElement(By.xpath("//strong[contains( text(), 'The Bahamas')]/parent::td//preceding-sibling::td/input")).click();
+		
+	
 	}
 
 }

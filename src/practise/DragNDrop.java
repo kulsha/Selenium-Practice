@@ -10,7 +10,7 @@ public class DragNDrop {
 
 	public static void main(String[] args) throws InterruptedException {
 
-		System.setProperty("webdriver.chrome.driver", "./Softwares/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./Softwares/chromedriver_83.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://jqueryui.com/droppable/");
 		Thread.sleep(2000);
@@ -21,8 +21,8 @@ public class DragNDrop {
 		WebElement e = driver.findElement(By.xpath("//div[@id='draggable']"));
 		Thread.sleep(2000);//drag and hold
 		WebElement e1 = driver.findElement(By.xpath("//div[@id='droppable']")); //release place
-		a.clickAndHold(e).moveToElement(e1).release().build().perform();
-		//a.dragAndDrop(e, e1).build().perform();
+		//a.clickAndHold(e).moveToElement(e1).release().build().perform();
+		a.dragAndDrop(e, e1).build().perform();
 		
 		
 		

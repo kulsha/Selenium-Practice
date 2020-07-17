@@ -28,7 +28,7 @@ public class Excel_Read {
 		Row r = sh.getRow(1);
 		Cell c = r.getCell(0);
 		
-		
+
 		String v = c.getStringCellValue();
 		System.out.println(v);
 		
@@ -37,6 +37,17 @@ public class Excel_Read {
 		System.out.println(rowCount);
 		
 
+//		File fis=new File("./ExcelData/TestData_Write1.xlsx");
+//		XSSFWorkbook wb=new XSSFWorkbook();
+//		XSSFSheet sh=wb.createSheet();
+//		sh.createRow(10).createCell(10).setCellValue("Angrej");
+//
+//		FileOutputStream fos= new FileOutputStream(fis);
+//
+//		wb.write(fos);
+		
+		
+		
 		
 	}
 
