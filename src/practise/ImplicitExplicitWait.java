@@ -17,13 +17,21 @@ public class ImplicitExplicitWait {
 		WebDriver driver = new ChromeDriver();
 		
 		//driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
-		//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+		
+		
 		
 		driver.get("https://www.facebook.com");
 		
-		WebElement firstName = driver.findElement(By.name("firstname"));
-		WebElement lastName = driver.findElement(By.name("lastname"));
-
+		WebElement firstName = driver.findElement(By.name("firstname")); //10   3rd second   17 sec
+		WebElement lastName = driver.findElement(By.name("lastname")); //10	    7th second   13 sec
+		
+		WebElement login = driver.findElement(By.name("login")); //20   nosuch element     60 second
+		
+		
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
 		sendKeys(driver , firstName , 10 , "Tom");
 		sendKeys(driver , lastName , 5 , "Peter");
 		

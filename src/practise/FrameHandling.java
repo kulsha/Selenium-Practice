@@ -13,23 +13,21 @@ public class FrameHandling {
 
 	public static void main(String[] args) throws InterruptedException {
 
-		System.setProperty("webdriver.chrome.driver", "./Softwares/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./Softwares/chromedriver_83.exe");
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://www.toolsqa.com/iframe-practice-page/");
+		driver.get("http://demo.automationtesting.in/Frames.html");
 		
-		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		
-				
-		List<WebElement> iframeElements = driver.findElements(By.tagName("iframe"));
-		 System.out.println("The total number of iframes are " + iframeElements.size());
+		Thread.sleep(2000);
+		driver.switchTo().frame(3);
+		Thread.sleep(2000);
+		 driver.findElement(By.xpath("//input[@type = 'text']")).sendKeys("hello");		
+		 
+		 driver.switchTo().defaultContent();
+		 
+		 
+		 
 		 
 		
-		
-				driver.switchTo().frame("IF1");
-				Thread.sleep(2000);
-				driver.findElement(By.xpath("")).click();
-
 	}
 
 }
