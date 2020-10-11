@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.Reporter;
 
 public class AlertPopUpHandle {
 
@@ -21,10 +22,12 @@ public class AlertPopUpHandle {
 		driver.findElement(By.xpath("//input[@name='proceed']")).click();
 		Thread.sleep(5000);
 		
+//Interface		
 		Alert alert = driver.switchTo().alert();
 		Thread.sleep(3000);
 	//	System.out.println(alert.getText());
 		alert.accept(); //click ok button
+		Reporter.log("alert clicked" , true);
 		//alert.dismiss(); // click cancel button
 	
 		String text = alert.getText();

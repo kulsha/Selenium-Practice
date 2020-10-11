@@ -19,6 +19,9 @@ public class WebTable_2 {
 	driver.findElement(By.xpath("//strong[contains( text(), 'The Bahamas')]/parent::td//preceding-sibling::td/input")).click();
 		
 	
+	
+	
+	
 	}
 
 }

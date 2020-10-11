@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [REALM]">
+  <test name="Regression(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testNG.Googleoprations">
+        <methods>
+          <include name="Advertising"/>
+          <include name="Images"/>
+          <include name="Gmail"/>
+          <include name="printtitle"/>
+          <include name="privacy"/>
+        </methods>
+      </class> <!-- testNG.Googleoprations -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [REALM] -->

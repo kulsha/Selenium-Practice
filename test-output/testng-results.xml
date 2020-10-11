@@ -1,59 +1,195 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="5" total="5" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="221" started-at="2020-02-12T17:38:43Z" finished-at="2020-02-12T17:38:43Z">
+  <suite name="REALM Suite" duration-ms="114" started-at="2020-08-04T17:03:40Z" finished-at="2020-08-04T17:03:40Z">
     <groups>
+      <group name="smoke">
+        <method signature="Googleoprations.Advertising()[pri:0, instance:testNG.Googleoprations@26be92ad]" name="Advertising" class="testNG.Googleoprations"/>
+        <method signature="Googleoprations.Gmail()[pri:0, instance:testNG.Googleoprations@26be92ad]" name="Gmail" class="testNG.Googleoprations"/>
+        <method signature="Googleoprations.Images()[pri:0, instance:testNG.Googleoprations@26be92ad]" name="Images" class="testNG.Googleoprations"/>
+        <method signature="Googleoprations.printtitle()[pri:0, instance:testNG.Googleoprations@26be92ad]" name="printtitle" class="testNG.Googleoprations"/>
+        <method signature="Googleoprations.privacy()[pri:0, instance:testNG.Googleoprations@26be92ad]" name="privacy" class="testNG.Googleoprations"/>
+      </group> <!-- smoke -->
     </groups>
-    <test name="Test" duration-ms="42" started-at="2020-02-12T17:38:43Z" finished-at="2020-02-12T17:38:43Z">
-      <class name="practise.ParameterizeTestNG">
-        <test-method status="PASS" signature="firstTest(java.lang.String)[pri:0, instance:practise.ParameterizeTestNG@cc285f4]" name="firstTest" duration-ms="18" started-at="2020-02-12T23:08:43Z" finished-at="2020-02-12T23:08:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[suite level parameter]]>
-              </value>
-            </param>
-          </params>
+    <test name="Regression" duration-ms="114" started-at="2020-08-04T17:03:40Z" finished-at="2020-08-04T17:03:40Z">
+      <class name="testNG.Googleoprations">
+        <test-method status="FAIL" signature="Advertising()[pri:0, instance:testNG.Googleoprations@26be92ad]" name="Advertising" duration-ms="29" started-at="2020-08-04T22:33:40Z" finished-at="2020-08-04T22:33:40Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at testNG.Googleoprations.Advertising(Googleoprations.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- firstTest -->
-      </class> <!-- practise.ParameterizeTestNG -->
-    </test> <!-- Test -->
-    <test name="Test 2" duration-ms="7" started-at="2020-02-12T17:38:43Z" finished-at="2020-02-12T17:38:43Z">
-      <class name="practise.ParameterizeTestNG">
-        <test-method status="PASS" signature="secondTest(java.lang.String)[pri:0, instance:practise.ParameterizeTestNG@47c62251]" name="secondTest" duration-ms="2" started-at="2020-02-12T23:08:43Z" finished-at="2020-02-12T23:08:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test level parameter]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- Advertising -->
+        <test-method status="FAIL" signature="Gmail()[pri:0, instance:testNG.Googleoprations@26be92ad]" name="Gmail" duration-ms="11" started-at="2020-08-04T22:33:40Z" finished-at="2020-08-04T22:33:40Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at testNG.Googleoprations.Gmail(Googleoprations.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- secondTest -->
-      </class> <!-- practise.ParameterizeTestNG -->
-    </test> <!-- Test 2 -->
-    <test name="Test 3" duration-ms="4" started-at="2020-02-12T17:38:43Z" finished-at="2020-02-12T17:38:43Z">
-      <class name="practise.ParameterizeTestNG">
-        <test-method status="PASS" signature="thirdTest(java.lang.String, java.lang.String)[pri:0, instance:practise.ParameterizeTestNG@1bce4f0a]" name="thirdTest" duration-ms="0" started-at="2020-02-12T23:08:43Z" finished-at="2020-02-12T23:08:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[overriding suite level]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[test level parameter]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- Gmail -->
+        <test-method status="FAIL" signature="Images()[pri:0, instance:testNG.Googleoprations@26be92ad]" name="Images" duration-ms="2" started-at="2020-08-04T22:33:40Z" finished-at="2020-08-04T22:33:40Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at testNG.Googleoprations.Images(Googleoprations.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- thirdTest -->
-      </class> <!-- practise.ParameterizeTestNG -->
-    </test> <!-- Test 3 -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- Images -->
+        <test-method status="FAIL" signature="printtitle()[pri:0, instance:testNG.Googleoprations@26be92ad]" name="printtitle" duration-ms="2" started-at="2020-08-04T22:33:40Z" finished-at="2020-08-04T22:33:40Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at testNG.Googleoprations.printtitle(Googleoprations.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printtitle -->
+        <test-method status="FAIL" signature="privacy()[pri:0, instance:testNG.Googleoprations@26be92ad]" name="privacy" duration-ms="6" started-at="2020-08-04T22:33:40Z" finished-at="2020-08-04T22:33:40Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at testNG.Googleoprations.privacy(Googleoprations.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- privacy -->
+      </class> <!-- testNG.Googleoprations -->
+    </test> <!-- Regression -->
+  </suite> <!-- REALM Suite -->
 </testng-results>

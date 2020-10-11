@@ -39,27 +39,39 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 
- public class Practice {
-	 
-		 	public static void main(String[] args) throws Exception {
-		
+ public class Practice 
 
-		ChromeOptions options = new ChromeOptions();
-		//options.addArguments("--incognito");
-		System.setProperty("webdriver.chrome.driver", "./Softwares/chromedriver_83.exe");
-		WebDriver driver = new ChromeDriver();
-		driver.get("https://www.testflipkart.com/" );
-		
-			
-		
-	}	
-	
-	
-	
-	
-	
+ {
+	 public static void main(String[] args)
+	 {
+		 
+		 int[] num = {1,2,3,4,5,6};
+		 int[] result = new int[num.length];
+		 int n=num.length;
+		 int j=n;
+		 
+		 for(int i=0 ; i<num.length ; i++)
+		 {
+			 result[j-1] = num[i];
+			 j=j-1;
+			 
+			 //result[5]=1
+			 //result[4]=2
+			 
+		 }
+		 
+		 for(int k=0 ; k<num.length ; k++)
+			 System.out.print(" " +result[k]);
+		 
+		 
+		 
+		 
+	 }
 	
 }
 

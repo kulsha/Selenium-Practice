@@ -11,9 +11,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class WebTable_1 {
 
 	public static void main(String[] args) {
-		
+		WebDriver driver ; 
 		System.setProperty("webdriver.chrome.driver", "./Softwares/chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
+		 driver = new ChromeDriver();
 		driver.get("https://cosmocode.io/automation-practice-webtable/");
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		

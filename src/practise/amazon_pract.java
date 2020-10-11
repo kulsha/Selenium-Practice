@@ -7,6 +7,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
 public class amazon_pract {
+	int a = 10;
+	static int b= 20 ;
 
 	public static void main(String[] args) throws InterruptedException {
 		

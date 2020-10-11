@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="REALM Suite">
+  <test name="Regression">
+      <classes>
+      	<class name="practise.Practice">
+      		<methods>
+					<include name="clickGmailLink"></include>
+					
+			</methods>
+		</class>		
+      </classes>
+  </test> 
+</suite>

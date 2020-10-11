@@ -33,7 +33,8 @@ public class ScrollUpDown {
 		Thread.sleep(2000);
 		e.click();
 		
-
+		driver.close();
+	
 	}
 
 }

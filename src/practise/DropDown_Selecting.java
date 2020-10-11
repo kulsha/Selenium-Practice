@@ -20,6 +20,8 @@ public class DropDown_Selecting {
 
 		Select select = new Select(driver.findElement(By.xpath("//select[@title='Search in']")));
 		select.selectByIndex(4);
+		
+		
 				
 		
 	}
